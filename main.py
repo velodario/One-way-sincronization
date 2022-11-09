@@ -24,5 +24,6 @@ if __name__ == '__main__':
             names = s.read_files()
             r.write_files(names)
             logging.info("all files copied to replica folder")
-            
+    else:
+        logging.error("source or replica folder does not exist")      
 
